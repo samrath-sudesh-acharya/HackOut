@@ -26,6 +26,8 @@ class _DemoAppState extends State<DemoApp> {
   String cvvNumber = '';
   String expiryDate = '';
   bool showBackView = false;
+  String ptext = '';
+  String ttext = '';
 
   void onCreditCardModel(CreditCardModel creditCardModel) {
     setState(() {
@@ -37,13 +39,24 @@ class _DemoAppState extends State<DemoApp> {
     });
   }
 
+  void initstate() {
+    ttext = 'paying';
+    super.initState();
+  }
+
+  void method1() {
+    setState(() {
+      ttext = 'Pay';
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Credit Card Ui'),
+        title: Text('Payment'),
         centerTitle: true,
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.green,
       ),
       body: SafeArea(
         child: Column(
@@ -58,9 +71,9 @@ class _DemoAppState extends State<DemoApp> {
               cardHolderName: cardHolderName,
               cvvCode: cvvNumber,
               showBackView: showBackView,
-              cardBgColor: Colors.greenAccent,
+              cardBgColor: Colors.green,
               textStyle: TextStyle(
-                color: Colors.black,
+                color: Colors.white,
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
               ),
@@ -72,9 +85,25 @@ class _DemoAppState extends State<DemoApp> {
                   onCreditCardModelChange: onCreditCardModel,
                   cursorColor: Colors.red,
                   themeColor: Colors.black,
+                  formKey: null,
                 ),
               ),
             ),
+            Positioned(
+              top: 300,
+              width: 95,
+              left: 50,
+              height: 50,
+              child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Color(0xFF7CB342),
+                    onPrimary: Colors.white,
+                  ),
+                  onPressed: () {
+                    method1();
+                  },
+                  child: Text(ttext)),
+            )
           ],
         ),
       ),
