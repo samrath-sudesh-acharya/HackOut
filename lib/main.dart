@@ -27,7 +27,7 @@ class _DemoAppState extends State<DemoApp> {
   String expiryDate = '';
   bool showBackView = false;
   String ptext = '';
-  String ttext = '';
+  String ttext = 'pay';
 
   void onCreditCardModel(CreditCardModel creditCardModel) {
     setState(() {
@@ -39,14 +39,9 @@ class _DemoAppState extends State<DemoApp> {
     });
   }
 
-  void initstate() {
-    ttext = 'paying';
-    super.initState();
-  }
-
   void method1() {
     setState(() {
-      ttext = 'Pay';
+      ttext = 'Paying';
     });
   }
 
@@ -85,25 +80,25 @@ class _DemoAppState extends State<DemoApp> {
                   onCreditCardModelChange: onCreditCardModel,
                   cursorColor: Colors.red,
                   themeColor: Colors.black,
-                  formKey: null,
                 ),
               ),
             ),
             Positioned(
-              top: 300,
-              width: 95,
-              left: 50,
+              top: 370,
+              width: 200,
+              left: 95,
               height: 50,
               child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    primary: Color(0xFF7CB342),
-                    onPrimary: Colors.white,
-                  ),
-                  onPressed: () {
-                    method1();
-                  },
-                  child: Text(ttext)),
-            )
+                style: ElevatedButton.styleFrom(
+                  primary: Color(0xFF7CB342),
+                  onPrimary: Colors.white,
+                ),
+                child: Text('$ttext'),
+                onPressed: () {
+                  method1();
+                },
+              ),
+            ),
           ],
         ),
       ),
