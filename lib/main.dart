@@ -1,4 +1,4 @@
-import 'package:app/homescreen.dart';
+import 'package:app/login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +13,7 @@ class Myapp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.grey[300],
       ),
-      home: Homescreen(),
+      home: loginpage(),
     );
   }
 }

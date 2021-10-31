@@ -1,6 +1,9 @@
 import 'package:app/body.dart';
 import 'package:app/constants.dart';
+import 'package:app/payment.dart';
 import 'package:flutter/material.dart';
+
+import 'input_page.dart';
 
 class Homescreen extends StatelessWidget {
   @override
@@ -10,7 +13,10 @@ class Homescreen extends StatelessWidget {
       body: Body(),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.green[600],
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => inputPage()));
+        },
         child: Icon(
           Icons.airplanemode_active,
         ),

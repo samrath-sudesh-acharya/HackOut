@@ -1,4 +1,5 @@
 import 'package:app/main.dart';
+import 'package:app/payment_prize.dart';
 import 'package:flutter/material.dart';
 import 'constants.dart';
 
@@ -21,7 +22,7 @@ class Hospitals extends StatelessWidget {
             image: 'lib/assets/N4.jpg',
             title: 'Narayana Hrudalaya',
             spec: 'Heart surgeries',
-            press: () {},
+            pprize: '\$1345.69',
             place: 'All India.',
           ),
           Recomendation(
@@ -30,7 +31,7 @@ class Hospitals extends StatelessWidget {
             title: 'Apollo cancer center',
             spec: 'Cancer treatment',
             place: 'Chennai,TN.(popular)',
-            press: () {},
+            pprize: '\$1404.61',
           ),
           Recomendation(
             size: size,
@@ -38,7 +39,7 @@ class Hospitals extends StatelessWidget {
             title: 'Max superspeciality',
             spec: 'Pulmonology',
             place: 'Saket,Delhi, India.',
-            press: () {},
+            pprize: '\$1254.61',
           ),
           Recomendation(
             size: size,
@@ -46,7 +47,7 @@ class Hospitals extends StatelessWidget {
             title: 'Fortis memorial',
             spec: 'Nephrology',
             place: 'Gurgaon,India(popular)',
-            press: () {},
+            pprize: '\$1404.61',
           ),
         ],
       ),
@@ -61,13 +62,12 @@ class Recomendation extends StatelessWidget {
     required this.image,
     required this.title,
     required this.spec,
-    required this.press,
+    required this.pprize,
     required this.place,
   }) : super(key: key);
 
   final Size size;
-  final String image, title, spec, place;
-  final Function press;
+  final String image, title, spec, place, pprize;
 
   @override
   Widget build(BuildContext context) {
@@ -83,7 +83,12 @@ class Recomendation extends StatelessWidget {
         children: <Widget>[
           Image.asset(image),
           GestureDetector(
-            onTap: press(),
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => payment_prize(prize: '$pprize')));
+            },
             child: Container(
               padding: EdgeInsets.all(pad / 2),
               decoration: BoxDecoration(
