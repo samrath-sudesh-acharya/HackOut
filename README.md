@@ -4,8 +4,9 @@ It lets you to compare the prices of a perticular treatment in different hospita
 ## Made with  
 <img align="left" src="https://img.icons8.com/color/48/000000/flutter.png"/><img align="left" src="https://img.icons8.com/color/48/000000/python--v1.png"/><br />
 <br /><br /><br />*Upcoming features*
+ - Adding option to travel to other countries with affordable healthcare.
  - For the foreign users undergoing long term treatment tourism option for the places near the perticular hospital.
  - Hotel booking options in the vicinity of the hospital.
- - Adding option to travel to other countries with affordable healthcare.<br /><br /><br />
+ <br /><br /><br />
 
 ![app_flowchart](https://user-images.githubusercontent.com/89213108/139567634-84d2c0e2-c6b3-4eec-8a8f-96998987a5f4.png)
