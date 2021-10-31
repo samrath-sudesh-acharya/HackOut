@@ -5,5 +5,5 @@ It lets you to compare the prices of a perticular treatment in different hospita
 <img align="left" src="https://img.icons8.com/color/48/000000/flutter.png"/><img align="left" src="https://img.icons8.com/color/48/000000/python--v1.png"/><br />
 <br /><br /><br />*Upcoming features*
  - For the foreign users undergoing long term treatment tourism option for the places near the perticular hospital.
- - 
+ - Hotel booking options in the vicinity of the hospital.
 
