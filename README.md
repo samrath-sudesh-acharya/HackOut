@@ -3,7 +3,7 @@ It lets you to compare the prices of a perticular treatment in different hospita
 ![medgo](https://user-images.githubusercontent.com/89213108/139566221-15e2fdfb-5c46-465d-8cf0-1cafc42c53a8.png)
 ## Made with  
 <img align="left" src="https://img.icons8.com/color/48/000000/flutter.png"/><img align="left" src="https://img.icons8.com/color/48/000000/python--v1.png"/><br />
-<br />*Upcoming features*
+<br /><br /><br />*Upcoming features*
  - For the foreign users undergoing long term treatment tourism option for the places near the perticular hospital.
  - 
 
