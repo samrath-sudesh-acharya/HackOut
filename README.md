@@ -1,16 +1,3 @@
-# Instruction
+![medgo](https://user-images.githubusercontent.com/89213108/139566221-15e2fdfb-5c46-465d-8cf0-1cafc42c53a8.png)
 
-## clone the repo
-```
-git clone https://github.com/samrath-sudesh-acharya/HackOut.git
-```
-## Create your own branch
-```
-git checkout -b <your_name>
-```
-## After completing the work 
-```
-git add .
-git commit -m "Message"
-git push origin <your_name>
-```
+Medgo is an app that facilitates medical travels mainly to India from other countries where the healthcare is too expensive
